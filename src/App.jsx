@@ -1,16 +1,35 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import TodoList from "./components/TodoList/TodoList"
 
 function App() {
   
-
+    const todos = [
+      {id:1 , text:"todo 1", isFinished:true},
+      {id:2 , text:"todo 2", isFinished:false}
+    ]
   return (
     <>
-      Hello world
+      <TodoList todos={todos}/>
     </>
   )
 }
 
-export default App
+export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
